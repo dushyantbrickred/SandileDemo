@@ -63,7 +63,8 @@ public class BaseTest {
 
     @AfterTest
     public void afterTestMethod(){
-        //driver.quit();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+//        driver.quit();
         extentReports.flush();
     }
 
