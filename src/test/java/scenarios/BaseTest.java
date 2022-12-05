@@ -8,7 +8,6 @@ import com.aventstack.extentreports.markuputils.Markup;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
-import com.aventstack.extentreports.view.Ico;
 import commons.ICommons;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -25,7 +24,7 @@ public class BaseTest {
     public static WebDriver driver;
     ExtentSparkReporter extentReporter;
     ExtentReports extentReports;
-    ExtentTest extentTestLogger;
+    public ExtentTest extentTestLogger;
 
 
     @BeforeTest
